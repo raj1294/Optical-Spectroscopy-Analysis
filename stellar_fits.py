@@ -112,11 +112,6 @@ chistatgrid,surftemp,surfgrav,\
                                         radius,rerr,fname)))
 indmax = 10
 
-# lab = ["Teff: 8500.0 K, log g: 15.0","Teff: 8750.0 K, log g: 15.0",\
-#         "Teff: 9000.0 K, log g: 20.0","Teff: 9250.0 K, log g: 20.0",\
-#         "Teff: 9000.0 K, log g: 15.0","Teff: 8250.0 K, log g: 15.0",\
-#         "Teff: 9500.0 K, log g: 20.0","Teff: 8750.0 K, log g: 20.0",\
-#         "Teff: 8000.0 K, log g: 10.0","Teff: 8250.0 K, log g: 10.0"]
 lab = ["Teff: 11750.0 K, log g: 20.0","Teff: 11500.0 K, log g: 20.0",\
         "Teff: 11250.0 K, log g: 20.0","Teff: 14000.0 K, log g: 20.0",\
         "Teff: 11000.0 K, log g: 20.0","Teff: 10750.0 K, log g: 20.0",\
@@ -128,12 +123,6 @@ hstf1 = [38e-18,12e-18,5.5e-18,3.1e-18,1.7e-18]
 dhstf1 = [2e-18,1e-18,0.4e-18,0.2e-18,0.1e-18]
 hstf2 = [35e-18,13.3e-18,5.6e-18,2.8e-18,1.57e-18]
 dhstf2 = [2e-18,0.6e-18,0.2e-18,0.1e-18,0.04e-18]
-
-# hstl = [1528,2375,3356]
-# hstf1 = [38e-18,12e-18,5.5e-18]
-# dhstf1 = [2e-18,1e-18,0.4e-18]
-# hstf2 = [35e-18,13.3e-18,5.6e-18]
-# dhstf2 = [2e-18,0.6e-18,0.2e-18]
 
 hstf1 = np.array(hstf1)
 hstf2 = np.array(hstf2)
@@ -179,7 +168,7 @@ for res in range(indmax):
     fluxmodplot = stellar_model(Av,Rv,radius[res],\
                                 distance,waveorig,fluxorig)
     
-    # plt.plot(waveem,fluxmodextinct/1e-17,label=label)
+    plt.plot(waveem,fluxmodextinct/1e-17,label=label)
     plt.plot(waveorig,fluxmodplot/1e-17,label=label)
     
     residmod = (fluxstdsavgol - fluxmodextinct)/1e-17
