@@ -1,10 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 10 13:35:22 2024
+############################
+#Mask emission lines of long-slit Gemini-South spectra using this file
 
-@author: erc_magnesia_raj
-"""
 import scipy.signal as sc
 from astropy.io import fits
 import numpy as np
