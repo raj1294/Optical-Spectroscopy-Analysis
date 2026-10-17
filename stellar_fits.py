@@ -1,10 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov  9 11:19:51 2024
+#####################
+#Fit SED models from the Castelli and Kurucz atlas to Gemini long-slit spectra.   
 
-@author: erc_magnesia_raj
-"""
 # Model comparison
 import numpy as np
 import extinction
