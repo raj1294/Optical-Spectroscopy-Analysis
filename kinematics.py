@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov  9 11:18:03 2024
-
-@author: erc_magnesia_raj
-"""
 import numpy
 from astropy.io import fits
 import numpy as np
